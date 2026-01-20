@@ -5,23 +5,38 @@
 
     <div class="carousel">
 
-    <!-- Left arrow -->
-    <button class="arrow left" (click)="prevProduct()">‹</button>
+    
 
     <!-- Product display -->
     <div class="product">
-      <img 
+     <div class="product-img-con">
+       <img class="product-img"
         [src]="products[currentIndex()].image" 
         alt="Product image"
       />
+     </div>
+     
+
+     <p class="name">
+        {{ products[currentIndex()].name }}
+      </p>
+
+      
+    <div class="product-arrow-con">
+      <!-- Left arrow -->
+    <button class="arrow left, left-arrow" (click)="prevProduct()">‹</button>
 
       <p class="price">
-        ₦{{ products[currentIndex()].price }}
+        {{ products[currentIndex()].price | currency: 'NGN': 'symbol' }}
       </p>
-    </div>
 
-    <!-- Right arrow -->
-    <button class="arrow right" (click)="nextProduct()">›</button>
+       <!-- Right arrow -->
+    <button class="arrow right, right-arrow" (click)="nextProduct()">›</button>
+    </div>
+    </div>
+    
+
+   
 
   </div>
 </div>

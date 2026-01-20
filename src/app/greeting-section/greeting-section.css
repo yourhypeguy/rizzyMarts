@@ -5,24 +5,26 @@
     margin: 0px;
    
 }
-body{
-    background: #B71C1C;
-}
+
 
 .greeting{
-    width: 100%;
+    width: 95%;
+    height: 14vh;
+    background: linear-gradient(90deg, #FF7A00 0%, #ffbe81 100%);
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
+
+    margin: 2em auto;
+    border-radius: 7px;
 }
+
 .greetingH1{
      font-size: 22px;
     color: #F44336;
     padding-left: 2em;
     padding-top: 1em;
-    
-  font-family: "Rubik Moonrocks", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
-
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .categories{
@@ -48,17 +50,28 @@ body{
     width: 100px;
     height: 2.5em;
     margin: 3px;
-    border: 1px solid #B71C1C;
+    border: 0.5px solid #a5a5a5;
     letter-spacing: 1px;
     text-align: center;
    border-radius: 5px;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
+  box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
+
     background: linear-gradient(
   to right,
-  #F44336,
-  #e55d5d
+  #FF7A00,
+  #FF7A00
 );
     padding: 7px;
-    font-weight: 700;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baner-img{
+    width: 100%;
+  height: 130px;
+    object-fit: contain;
 }

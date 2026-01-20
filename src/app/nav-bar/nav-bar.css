@@ -45,12 +45,14 @@
     background-color: #ffffff;
     display: flex;
     border: 0px solid #a7a7a7 ;
-    box-shadow: 0px 0px 2px 1px #a5a5a5;
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 2em;
+    left: 3em;
+    border-radius: 5px;
 }
 
 .search-container{
@@ -67,8 +69,16 @@
    width: 300px;
     height: 2em;
     border-radius: 5px 0px 0px 5px;
-    border: 0.5px solid #5c5c5c;
-   
+    border: 0.5px solid #ffffff;
+   box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
+
+}
+
+.search-input::placeholder{
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
 }
 
 .submit-button{
@@ -77,11 +87,19 @@
     background-color: #FF7A00;
     height: 2em;
     border-radius:0px 5px 5px 0px;
-    border: 0.5px solid #5c5c5c;
+    border: 0.5px solid #ffffff;
+    position: relative;
+    bottom: 2.5px;
+    box-shadow: 0px 0px 1px 1px #dcdcdc;
 }
 
 .search-text{
+    width: 100%;
     color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
